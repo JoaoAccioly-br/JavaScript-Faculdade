@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios com querySelector</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .paragrafo { color: gray; }
+    .card { border: 1px solid #ccc; padding: 10px; margin: 5px; }
+    .destaque { color: red; font-weight: bold; }
+    .animar { background: lightblue; width: 100px; height: 100px; transition: all 0.3s ease; }
+  </style>
+
+<body>
+  <h1 id="titulo">Título Principal</h1>
+  <h2>Subtítulo 1</h2>
+  <h2>Subtítulo 2</h2>
+
+  <p class="paragrafo">Primeiro parágrafo.</p>
+  <p class="paragrafo">Segundo parágrafo.</p>
+  <p>Parágrafo sem classe.</p>
+
+  <nav>
+    <a href="#">Início</a> |
+    <a href="#">Sobre</a> |
+    <a href="#">Contato</a>
+  </nav>
+
+  <ul class="tarefas">
+    <li>Tarefa 1</li>
+    <li>Tarefa 2</li>
+    <li>Tarefa 3</li>
+  </ul>
+	
+     <button type="submit" id="Nova_tarefa" onclick = Nova_Tarefa()>Adicionar uma Tarefa Extra</button>
+
+  <div id="conteudo">
+    <p>Texto do conteúdo 1</p>
+    <p>Texto do conteúdo 2</p>
+  </div>
+
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+
+  <img id="foto" src="default.jpg" alt="Foto de perfil" width="150">
+
+  <form id="cadastro">
+    <label>Nome: <input type="text" class="nome"></label><br>
+    <label>Email: <input type="email" id="email"></label><br>
+    <label>Senha: <input type="password" id="senha"></label><br>
+    <button type="submit" id="enviar" onclick = enviado()>Enviar</button>
+  </form>
+
+  <button class="dark-mode" onclick = modo_escuro()>Ativar Dark Mode</button>
+  <button id="mostrarSenha" onclick = mostrar_senha>Mostrar Senha</button>
+  <button id="btnAnimar">Animar Div</button>
+
+  <div class="animar"></div>
+  <script src="script.js"></script>
+</body>
+</html>
