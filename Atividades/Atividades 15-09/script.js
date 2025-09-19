@@ -30,9 +30,16 @@ document.querySelectorAll(".card").forEach(card => {
 // Exercício 7
 
 function modo_escuro(){
-document.querySelector(".dark-mode")
-document.body.style.backgroundColor = "black"
-document.body.style.color = "white" 
+
+ let Cor_bg = document.body.style.backgroundColor
+ if (Cor_bg === "") {
+  document.body.style.backgroundColor = "black"
+  document.body.style.color = "white" 
+ }
+ else{
+  document.body.style.backgroundColor = ""
+  document.body.style.color = ""
+ }
 }
 
 // Exercício 8
@@ -42,13 +49,19 @@ document.querySelector("h2").classList.add("destaque")
 // Exercício 9
 
 function mostrar_senha(){
-document.querySelector("#mostrarSenha") 
-document.querySelector("#senha").type = "text"
-}
 
+let senha = document.querySelector("#senha")
+
+if (senha.type === "password") {
+  senha.type = "text" 
+}
+else {
+  senha.type = "password"
+}
+}
 // Exercício 10
 
-function Nova_Tarefa(){
+function Tarefa_extra(){
 document.querySelector("#Nova_Tarefa")
 let lista = document.querySelector(".tarefas")
 let nova_tarefa = document.createElement("li")
