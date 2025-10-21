@@ -108,6 +108,6 @@ function getPhoto(formEl) {
 // let country = document.querySelector('#exampleInputCountry').value;
 // let email = document.querySelector('#exampleInputEmail1').value;
 // let password = document.querySelector('#exampleInputPassword1').value;
-// //let photo = document.querySelector('#exampleInputFile').value;
+// let photo = document.querySelector('#exampleInputFile').value;
 // let admin = document.querySelector('#exampleInputAdmin').checked;
 // let button = document.querySelector('#save');
